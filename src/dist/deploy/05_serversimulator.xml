@@ -20,6 +20,8 @@
 <server class="org.jpos.q2.iso.QServer" logger="Q2"
     name="simulator_10000">
   <attr name="port" type="java.lang.Integer">10000</attr>
+  <attr name="minSessions" type="java.lang.Integer">100</attr>
+  <attr name="maxSessions" type="java.lang.Integer">25000</attr>
 
   <!--
   <channel class="org.jpos.iso.channel.XMLChannel"
@@ -37,4 +39,3 @@
     <property name="timeout" value="10000" />
   </request-listener>
 </server>
-

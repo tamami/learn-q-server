@@ -50,3 +50,7 @@ gradle tasks
 ````
 bin/q2
 ````
+
+### Additional information for production
+
+To handle 21k in production, impact to server session that must open connection to that number, this condition impact another resource in operating system especially open files limit, so must configuring this limit in /etc/security.limits.conf, change to the count of session, because one session must open one file in packager config.
